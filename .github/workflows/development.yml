@@ -1,0 +1,11 @@
+name: Dev Deployment
+
+'on': push
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy on Repo
+        run: echo 'deployed'
