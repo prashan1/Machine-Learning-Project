@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy on Repo
-        run: echo 'deployed'
+        run: echo ${{ secrets.DEV_SSH_PRIVATE_KEY }}
